@@ -79,7 +79,7 @@ const Card = (props) => {
         <div onClick={() => {
           router.push(`/product?id=${props.product?._id}`)
         }} className='items-center justify-center flex flex-col text-left'>
-          <Image alt={props.product?.name} src={props.product?.image ? urlForImage(props.product?.image).url() : ""} className='bottom-2 
+          <Image alt={props.product?.name} src={urlForImage(props.product?.image).url()} className='bottom-2 
       h-[50%] w-[80%] md:h-[30%] md:w-[80%] rounded-3xl mt-4  mx-auto' height={100} width={100} />
           <hr className='mb-2 mt-2 border-none w-[100%] mx-auto bg-orange-400 h-1 rounded-full' />
           <div>
